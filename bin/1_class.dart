@@ -11,6 +11,7 @@ class Person {
   String? address; // bisa atau boleh null / nullable
   final String country = 'Indonesia'; // tidak bisa diubah
 
+  // method
   void sayHello(String paramName) {
     print('Hello $paramName, My name is $name');
   }
