@@ -11,6 +11,9 @@ class Person {
   String? address; // bisa atau boleh null / nullable
   final String country = 'Indonesia'; // tidak bisa diubah
 
+  void sayHello(String paramName) {
+    print('Hello $paramName, My name is $name');
+  }
 }
 
 void main() {
@@ -23,6 +26,7 @@ void main() {
   print(person1.name);
   print(person1.address);
   print(person1.country);
+  person1.sayHello('Jhon Wick');
 
   var person2 = Person();
   print(person2);
