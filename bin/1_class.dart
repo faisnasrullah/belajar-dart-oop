@@ -17,6 +17,14 @@ class Person {
   }
 }
 
+// extension method
+// menambahkan method tambahan, tanpa harus mengubah dari isi class aslinya
+extension SayGoogByeOnPerson on Person {
+  void sayGoodBye(String paramName) {
+    print('Hello $paramName, from $name');
+  }
+}
+
 void main() {
   // Object
   var person1 = Person();
@@ -28,6 +36,7 @@ void main() {
   print(person1.address);
   print(person1.country);
   person1.sayHello('Jhon Wick');
+  person1.sayGoodBye('Eko Sungkowo');
 
   var person2 = Person();
   print(person2);
