@@ -5,6 +5,10 @@ class Person {
 
   // constructor (harus sama dengan nama class nya):
   // akan dipanggil pertama kali ketika object ini dibuat
+  // variable shadowing :
+  // ketika membuat constructor, buat nama parameternya berdeda
+  // dengan variabel yang ada diluar constructor
+  // contoh : Person(String name, String address) # jgn seperti ini
   Person(String paramName, String paramAddress) {
     name = paramName;
     address = paramAddress;
